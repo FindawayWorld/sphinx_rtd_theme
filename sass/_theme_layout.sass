@@ -258,7 +258,7 @@
 
 .wy-nav-side
   position: fixed
-  top: 0
+  top: 142px
   bottom: 0
   left: 0
   padding-bottom: 2em
@@ -307,11 +307,13 @@
   margin-left: $nav-desktop-width
   background: $section-background-color
   min-height: 100%
+  margin-top: 142px
+  position: relative
+  z-index: 1
 
 .wy-nav-content
   padding: $gutter $gutter * 2
   height: 100%
-  max-width: 800px
   margin: auto
 
 .wy-body-mask
@@ -361,13 +363,8 @@ footer
   .wy-nav-top
     display: block
   .wy-nav-side
-    @if $nav-desktop-position == left
-      left: -$nav-desktop-width
-    @else
-      right: -$nav-desktop-width
-    &.shift
-      width: 85%
-      left: 0
+    position: relative !important
+    float: left !important
   .wy-side-scroll
     width: auto
   .wy-side-nav-search
@@ -376,6 +373,7 @@ footer
     width: auto
   .wy-nav-content-wrap
     margin-left: 0
+    width: calc(100% - 300px)
     .wy-nav-content
       padding: $gutter
     &.shift
@@ -385,6 +383,9 @@ footer
       top: 0
       height: 100%
       overflow: hidden
+  .wy-grid-for-nav
+    position: relative
+    float: left
 
 +media($desktop-wider)
   .wy-nav-content-wrap

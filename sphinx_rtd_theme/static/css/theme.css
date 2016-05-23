@@ -4493,7 +4493,7 @@ div[class^='highlight'] pre {
 
 .wy-nav-side {
   position: fixed;
-  top: 0;
+  top: 142px;
   bottom: 0;
   left: 0;
   padding-bottom: 2em;
@@ -4554,6 +4554,9 @@ div[class^='highlight'] pre {
   margin-left: 300px;
   background: #fcfcfc;
   min-height: 100%;
+  margin-top: 142px;
+  position: relative;
+  z-index: 1;
 }
 
 .wy-nav-content {
@@ -4629,8 +4632,8 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   }
 
   .wy-nav-side {
-    position: relative;
-    float: left;
+    position: relative !important;
+    float: left !important;
   }
 
   .wy-side-scroll {

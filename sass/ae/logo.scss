@@ -1,15 +1,8 @@
-/** DuoBook Logo CSS
- *
- * <span class="DuoBookLogo x-small|small|medium|large|x-large">
- *      <strong>Duo</strong>Book<sup>&trade;</sup>
- *      <span class="sub-text">Read. Listen. Do Both.</span>
- * </span>
- *
- */
-
 .AudioEngineLogo {
     display: inline-block;
     text-align: left;
+    margin-top: 32px;
+    margin-left: 1em;
     color: $logo-color;
     font-weight: $logo-font-weight;
     font-size: $logo-font-size;

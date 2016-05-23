@@ -2,6 +2,10 @@
 
 .ae-page-header {
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
     height: 8.875em;
     padding: 1em 0;
     background-color: $black-warm;
@@ -64,7 +68,7 @@
     .nav-targets {
         float: right;
         list-style-type: none;
-        margin: 2em 0 0;
+        margin: 3em 2em 0 0;
 
         @include media(max-width 640px) {
             position: absolute;
