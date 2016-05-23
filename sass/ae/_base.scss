@@ -1,0 +1,23 @@
+@mixin text-rendering($style) {
+    -moz-text-rendering: $style;
+     -ms-text-rendering: $style;
+         text-rendering: $style;
+}
+
+@mixin font-smoothing($style) {
+    -webkit-font-smoothing: $style;
+       -moz-font-smoothing: $style;
+            font-smoothing: $style;
+}
+
+@mixin halogen {
+    font-family: "halogen", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+@mixin meta-web-pro {
+    font-family: "ff-meta-web-pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+* {
+    box-sizing:border-box;
+}

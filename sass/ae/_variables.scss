@@ -1,0 +1,59 @@
+// Colors
+$white: #fff;
+$black: #000;
+$red: #D02C30;
+$red-dark: #aa0809;
+$orange: #e56026;
+$gold: #daba22;
+$turquoise: #7accc8;
+$black-warm: #2D2A26;
+$gray-green: #7E7F74;
+$gray-light: #C8C8C8;
+$gray-extra-light: #f4f4f4;
+
+// Typography
+// Requires FF Meta Web Pro and Halogen
+$body-font-color: $black-warm;
+$body-font-weight: normal;
+$body-font-style: normal;
+
+$base-font-size: 16px;
+$base-line-height: 1.5em;
+
+$p-line-height: 1.4em;
+
+$font-smoothing: antialiased;
+
+$h1-font-size: 2.3rem;
+$h2-font-size: 2.25rem;
+$h3-font-size: 2rem;
+$h4-font-size: 1.5rem;
+$h5-font-size: 1rem;
+$h6-font-size: 0.875rem;
+
+$header-font-weight: 700;
+$header-font-style: normal;
+$header-font-color: $red;
+$header-line-height: $base-line-height;
+$header-top-margin: .2em;
+$header-bottom-margin: .5em;
+$header-text-rendering: optimizeLegibility;
+
+// Logo
+$logo-x-small-font-size: 1.125rem;
+$logo-small-font-size: 1.875rem;
+$logo-medium-font-size: 3.125rem;
+$logo-large-font-size: 4.375rem;
+$logo-x-large-font-size: 5.625rem;
+
+$logo-font-size: $logo-x-large-font-size;
+$logo-font-weight: 700;
+$logo-color: $white;
+$logo-secondary-color: $red;
+$logo-alt-color:$black-warm;
+$logo-letter-spacing: 0;
+$logo-tagline-font-size: 0.35em;
+$logo-tagline-letter-spacing: 0.12em;
+$logo-tagline-line-height: 0.7em;
+$logo-sub-text-color: $gray-green;
+$logo-text-transform: uppercase;

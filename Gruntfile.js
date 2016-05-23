@@ -66,7 +66,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'sass',
-          src: ['*.sass'],
+          src: ['*.sass', '*.scss'],
           dest: 'sphinx_rtd_theme/static/css',
           ext: '.css'
         }]
@@ -79,7 +79,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'sass',
-          src: ['*.sass'],
+          src: ['*.sass', '*.scss'],
           dest: 'sphinx_rtd_theme/static/css',
           ext: '.css'
         }]
@@ -125,7 +125,7 @@ module.exports = function(grunt) {
     watch: {
       /* Compile sass changes into theme directory */
       sass: {
-        files: ['sass/*.sass', 'bower_components/**/*.sass'],
+        files: ['sass/*.sass', 'sass/*.scss', 'bower_components/**/*.sass'],
         tasks: ['sass:dev']
       },
       /* Changes in theme dir rebuild sphinx */
@@ -160,4 +160,3 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['exec:bower_update','clean:build','sass:dev','browserify:dev','exec:build_sphinx','connect','open','watch']);
   grunt.registerTask('build', ['exec:bower_update','clean:build','sass:build','browserify:build','exec:build_sphinx']);
 }
-

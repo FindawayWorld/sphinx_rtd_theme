@@ -1,0 +1,128 @@
+/* The ae-header module represents a page header. */
+
+.ae-page-header {
+    width: 100%;
+    height: 8.875em;
+    padding: 1em 0;
+    background-color: $black-warm;
+
+    .AudioEngineLogo {
+        float: left;
+        color: $red;
+        font-size: 2.25em;
+
+        strong {
+            color: $white;
+        }
+
+        .sub-text {
+            color: $gray-light;
+            text-align: left;
+            font-weight: normal;
+
+            @include media(max-width 640px) {
+                text-align: center;
+            }
+        }
+
+        @include media(max-width 640px) {
+            font-size: 1.9em;
+            margin-bottom: 1em;
+            float: none;
+        }
+    }
+
+    .main-menu-trigger {
+        display: none;
+
+        @include media(max-width 640px) {
+            display: block;
+            clear: both;
+            font-size: 1.5em;
+            padding-bottom: 1em;
+        }
+    }
+
+    .main-nav {
+
+        @include media(max-width 640px) {
+            max-height: 0;
+            overflow: hidden;
+            position: relative;
+            z-index: 10;
+            margin: 0 -0.9375rem;
+            top: -100%;
+        }
+
+        &.is-open {
+            height: auto;
+            max-height: 9999px;
+            overflow: visible;
+        }
+    }
+
+    .nav-targets {
+        float: right;
+        list-style-type: none;
+        margin: 2em 0 0;
+
+        @include media(max-width 640px) {
+            position: absolute;
+            float: left;
+            margin: 0;
+            width: 100%;
+            background-color: $gray-light;
+        }
+    }
+
+    .nav-target {
+        float: left;
+        margin-left: 0.3em;
+
+        &:after {
+            content: " | ";
+            color: $white;
+
+            @include media(max-width 640px) {
+                content: none;
+            }
+        }
+
+        &:last-child:after {
+            content: none;
+        }
+
+        @include media(max-width 640px) {
+            display: block;
+            width: 100%;
+            float: none;
+            border-bottom: 1px solid #ddd;
+            margin-left: 0;
+        }
+    }
+
+    .nav-mobile {
+        display: none;
+
+        @include media(max-width 640px) {
+            display: block;
+        }
+    }
+
+    .nav-link {
+        color: $white;
+
+        @include media(max-width 640px) {
+            display: block;
+            font-size: 1.5em;
+            padding: 0.5em 1em;
+        }
+    }
+
+    @include media(max-width 640px) {
+        position: relative;
+        height: auto;
+        padding: 1em 0 0;
+        text-align: center;
+    }
+}

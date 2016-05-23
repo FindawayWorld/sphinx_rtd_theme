@@ -1,0 +1,124 @@
+/** DuoBook Logo CSS
+ *
+ * <span class="DuoBookLogo x-small|small|medium|large|x-large">
+ *      <strong>Duo</strong>Book<sup>&trade;</sup>
+ *      <span class="sub-text">Read. Listen. Do Both.</span>
+ * </span>
+ *
+ */
+
+.AudioEngineLogo {
+    display: inline-block;
+    text-align: left;
+    color: $logo-color;
+    font-weight: $logo-font-weight;
+    font-size: $logo-font-size;
+    line-height: 1;
+    vertical-align: middle;
+    @include halogen;
+    text-transform: $logo-text-transform;
+    letter-spacing: $logo-letter-spacing;
+    @include text-rendering($header-text-rendering);
+    @include font-smoothing($font-smoothing);
+
+    @media screen and (max-width: 1200px) {
+        font-size: $logo-x-large-font-size;
+    }
+    @media screen and (max-width: 1000px) {
+        font-size: $logo-large-font-size;
+    }
+    @media screen and (max-width: 800px) {
+        font-size: $logo-medium-font-size;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: $logo-small-font-size;
+    }
+    @media screen and (max-width: 320px) {
+        font-size: $logo-x-small-font-size;
+    }
+
+    &.alt {
+        color:$logo-alt-color;
+    }
+    &.x-small {
+        font-size: $logo-x-small-font-size;
+    }
+    &.small {
+        font-size: $logo-small-font-size;
+
+        @media screen and (max-width: 320px) {
+            font-size: $logo-x-small-font-size;
+        }
+    }
+    &.medium {
+        font-size: $logo-medium-font-size;
+
+        @media screen and (max-width: 600px) {
+            font-size: $logo-small-font-size;
+        }
+        @media screen and (max-width: 320px) {
+            font-size: $logo-x-small-font-size;
+        }
+    }
+    &.large {
+        font-size: $logo-large-font-size;
+
+        @media screen and (max-width: 800px) {
+            font-size: $logo-medium-font-size;
+        }
+        @media screen and (max-width: 600px) {
+            font-size: $logo-small-font-size;
+        }
+        @media screen and (max-width: 320px) {
+            font-size: $logo-x-small-font-size;
+        }
+    }
+    &.x-large {
+        font-size: $logo-x-large-font-size;
+
+        @media screen and (max-width: 1000px) {
+            font-size: $logo-large-font-size;
+        }
+        @media screen and (max-width: 800px) {
+            font-size: $logo-medium-font-size;
+        }
+        @media screen and (max-width: 600px) {
+            font-size: $logo-small-font-size;
+        }
+        @media screen and (max-width: 320px) {
+            font-size: $logo-x-small-font-size;
+        }
+
+    }
+    &.alt strong {
+        color: logo-alt-color;
+    }
+
+    strong {
+        margin-right: $logo-letter-spacing;
+        color: $logo-secondary-color;
+    }
+    strong, sup, .sub-text {
+        text-align:left;
+        letter-spacing:0;
+        @include halogen;
+    }
+    sup {
+        top:-1.2em;
+        font-size:.4em;
+        color:inherit;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+    .sub-text {
+        @include meta-web-pro;
+        font-size: $logo-tagline-font-size;
+        letter-spacing: $logo-tagline-letter-spacing;
+        line-height: $logo-tagline-line-height;
+        display:block;
+        text-align: left;
+        color: $logo-sub-text-color;
+        text-transform: uppercase;
+    }
+}

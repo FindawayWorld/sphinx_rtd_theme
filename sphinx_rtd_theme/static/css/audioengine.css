@@ -1,0 +1,285 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/** DuoBook Logo CSS
+ *
+ * <span class="DuoBookLogo x-small|small|medium|large|x-large">
+ *      <strong>Duo</strong>Book<sup>&trade;</sup>
+ *      <span class="sub-text">Read. Listen. Do Both.</span>
+ * </span>
+ *
+ */
+.AudioEngineLogo {
+  display: inline-block;
+  text-align: left;
+  color: #fff;
+  font-weight: 700;
+  font-size: 5.625rem;
+  line-height: 1;
+  vertical-align: middle;
+  font-family: "halogen", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+@media screen and (max-width: 1200px) {
+  .AudioEngineLogo {
+    font-size: 5.625rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .AudioEngineLogo {
+    font-size: 4.375rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .AudioEngineLogo {
+    font-size: 3.125rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .AudioEngineLogo {
+    font-size: 1.875rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .AudioEngineLogo {
+    font-size: 1.125rem;
+  }
+}
+.AudioEngineLogo.alt {
+  color: #2D2A26;
+}
+.AudioEngineLogo.x-small {
+  font-size: 1.125rem;
+}
+.AudioEngineLogo.small {
+  font-size: 1.875rem;
+}
+@media screen and (max-width: 320px) {
+  .AudioEngineLogo.small {
+    font-size: 1.125rem;
+  }
+}
+.AudioEngineLogo.medium {
+  font-size: 3.125rem;
+}
+@media screen and (max-width: 600px) {
+  .AudioEngineLogo.medium {
+    font-size: 1.875rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .AudioEngineLogo.medium {
+    font-size: 1.125rem;
+  }
+}
+.AudioEngineLogo.large {
+  font-size: 4.375rem;
+}
+@media screen and (max-width: 800px) {
+  .AudioEngineLogo.large {
+    font-size: 3.125rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .AudioEngineLogo.large {
+    font-size: 1.875rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .AudioEngineLogo.large {
+    font-size: 1.125rem;
+  }
+}
+.AudioEngineLogo.x-large {
+  font-size: 5.625rem;
+}
+@media screen and (max-width: 1000px) {
+  .AudioEngineLogo.x-large {
+    font-size: 4.375rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .AudioEngineLogo.x-large {
+    font-size: 3.125rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .AudioEngineLogo.x-large {
+    font-size: 1.875rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .AudioEngineLogo.x-large {
+    font-size: 1.125rem;
+  }
+}
+.AudioEngineLogo.alt strong {
+  color: logo-alt-color;
+}
+.AudioEngineLogo strong {
+  margin-right: 0;
+  color: #D02C30;
+}
+.AudioEngineLogo strong, .AudioEngineLogo sup, .AudioEngineLogo .sub-text {
+  text-align: left;
+  letter-spacing: 0;
+  font-family: "halogen", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+.AudioEngineLogo sup {
+  top: -1.2em;
+  font-size: .4em;
+  color: inherit;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.AudioEngineLogo .sub-text {
+  font-family: "ff-meta-web-pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 0.35em;
+  letter-spacing: 0.12em;
+  line-height: 0.7em;
+  display: block;
+  text-align: left;
+  color: #7E7F74;
+  text-transform: uppercase;
+}
+
+/* The ae-header module represents a page header. */
+.ae-page-header {
+  width: 100%;
+  height: 8.875em;
+  padding: 1em 0;
+  background-color: #2D2A26;
+}
+.ae-page-header .AudioEngineLogo {
+  float: left;
+  color: #D02C30;
+  font-size: 2.25em;
+}
+.ae-page-header .AudioEngineLogo strong {
+  color: #fff;
+}
+.ae-page-header .AudioEngineLogo .sub-text {
+  color: #C8C8C8;
+  text-align: left;
+  font-weight: normal;
+}
+@media screen and (max-width: 640px) {
+  .ae-page-header .AudioEngineLogo .sub-text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 640px) {
+  .ae-page-header .AudioEngineLogo {
+    font-size: 1.9em;
+    margin-bottom: 1em;
+    float: none;
+  }
+}
+.ae-page-header .main-menu-trigger {
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  .ae-page-header .main-menu-trigger {
+    display: block;
+    clear: both;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+  }
+}
+@media screen and (max-width: 640px) {
+  .ae-page-header .main-nav {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    margin: 0 -0.9375rem;
+    top: -100%;
+  }
+}
+.ae-page-header .main-nav.is-open {
+  height: auto;
+  max-height: 9999px;
+  overflow: visible;
+}
+.ae-page-header .nav-targets {
+  float: right;
+  list-style-type: none;
+  margin: 2em 0 0;
+}
+@media screen and (max-width: 640px) {
+  .ae-page-header .nav-targets {
+    position: absolute;
+    float: left;
+    margin: 0;
+    width: 100%;
+    background-color: #C8C8C8;
+  }
+}
+.ae-page-header .nav-target {
+  float: left;
+  margin-left: 0.3em;
+}
+.ae-page-header .nav-target:after {
+  content: " | ";
+  color: #fff;
+}
+@media screen and (max-width: 640px) {
+  .ae-page-header .nav-target:after {
+    content: none;
+  }
+}
+.ae-page-header .nav-target:last-child:after {
+  content: none;
+}
+@media screen and (max-width: 640px) {
+  .ae-page-header .nav-target {
+    display: block;
+    width: 100%;
+    float: none;
+    border-bottom: 1px solid #ddd;
+    margin-left: 0;
+  }
+}
+.ae-page-header .nav-mobile {
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  .ae-page-header .nav-mobile {
+    display: block;
+  }
+}
+.ae-page-header .nav-link {
+  color: #fff;
+}
+@media screen and (max-width: 640px) {
+  .ae-page-header .nav-link {
+    display: block;
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+  }
+}
+@media screen and (max-width: 640px) {
+  .ae-page-header {
+    position: relative;
+    height: auto;
+    padding: 1em 0 0;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=audioengine.css.map */
