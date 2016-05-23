@@ -10,4 +10,5 @@
 dist/
 bower_components/
 node_modules/
+venv/
 npm-debug.log
